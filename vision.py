@@ -94,10 +94,10 @@ def main():
                 cv2.circle(image, center, 3, (0, 0, 255), -1)
                 cv2.putText(image,"centroid", (center[0]+10,center[1]), cv2.FONT_HERSHEY_SIMPLEX, 0.4,(0, 0, 255),1)
                 cv2.putText(image,"("+str(center[0])+","+str(center[1])+")", (center[0]+10,center[1]+15), cv2.FONT_HERSHEY_SIMPLEX, 0.4,(0, 0, 255),1)
-            dia = radius*2
+            objectradius = 4.2
             distance = (14*400.45) / radius
-            dfc = (((300 - center[0])*(300 - center[0])) + ((200 - center[1])*(200 - center[1])))
-            com = ((dfc*14)/14000)
+            dfc = (300 - center[0])
+            com = ((dfc*objectradius)/14000)
             print(com)
         # show the frame to our screen
         cv2.imshow("Original", image)
