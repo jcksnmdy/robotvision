@@ -96,6 +96,7 @@ def main():
                 cv2.putText(image,"("+str(center[0])+","+str(center[1])+")", (center[0]+10,center[1]+15), cv2.FONT_HERSHEY_SIMPLEX, 0.4,(0, 0, 255),1)
             objectradius = 4.2
             distance = (14*400.45) / radius
+            print(distance)
             dfc = (300 - center[0])
             com = ((dfc*objectradius)/14000)
             comneg = abs(com)
