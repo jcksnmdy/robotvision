@@ -6,4 +6,4 @@ run by doing
     
 adjust the trackbars to isolate a color
 
-change  variaable to the radius of the real world object
+change  variaale 'objectradius' to the radius of the real world object
