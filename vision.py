@@ -98,7 +98,13 @@ def main():
             distance = (14*400.45) / radius
             dfc = (300 - center[0])
             com = ((dfc*objectradius)/14000)
-            print(com)
+            comneg = abs(com)
+            if com < 0.0234 and com > -0.0234:
+                print("Just right!!")
+            if com < 0:
+                print("Turn left " + str(comneg) + " degrees")
+            else:
+                print("Turn right " + str(comneg) + " degrees")
         # show the frame to our screen
         cv2.imshow("Original", image)
         cv2.imshow("Mask", mask)
