@@ -2,8 +2,8 @@
 
 run by doing
 
-    python vision.py --filter HSV --webcam
+    python Find_HSV_valus.py --filter HSV --webcam
     
 adjust the trackbars to isolate a color
 
-change  variaale 'objectradius' to the radius of the real world object
+change  variable 'objectradius' to the radius of the real world object
