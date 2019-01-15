@@ -2,7 +2,7 @@
 
 run by doing
 
-    python Find_HSV_valus.py --filter HSV --webcam
+    python Find_HSV_value.py --filter HSV --webcam
     
 adjust the trackbars to isolate a color
 
