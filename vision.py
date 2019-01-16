@@ -89,9 +89,9 @@ def main():
             if com < 0.01 and com > -0.01:
                 print("Just right!!")
             if com < 0:
-                print("Turn left " + str(comneg) + " degrees")
-            else:
                 print("Turn right " + str(comneg) + " degrees")
+            else:
+                print("Turn left " + str(comneg) + " degrees")
         # show the frame to our screen
         cv2.imshow("Original", image)
         cv2.imshow("Mask", mask)
